@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Eduford | Blogs</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    </head>
+<body>
+    <nav class="nav na_top">
+        <div class="logo">
+           <a href="index.html"><img src="/images/logo.png" alt=""></a> 
+        </div>
+
+        <div class="nav_side">
+            <a href="about.html">About Us</a>
+            <a href="service.html">Services</a>
+            <a href="blogs.html">Blogs</a>
+            <a href="contact.html">Contact</a>
+            <a href="#">Login/Sign Up</a>
+        </div>
+    </nav>
+    <div class="team">
+        <h2>OUR ANIMATIONS</h2>
+        <div class="team_container">
+            <div class="team_video">
+                
+                    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0"></iframe>
+                
+
+            </div>
+            <div class="team_content">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque reiciendis vero recusandae iste quod error non optio autem cupiditate aliquam, delectus repellendus aperiam fugiat fugit, laudantium necessitatibus modi eaque nostrum?
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil odio obcaecati quidem, reiciendis delectus suscipit ipsum. Animi mollitia dolor laudantium quod nam, facilis voluptate modi nihil illo vero, necessitatibus porro?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, voluptas quibusdam reprehenderit velit atque laudantium. Praesentium nostrum mollitia suscipit, id delectus eligendi, animi nobis fuga quasi quae, laboriosam nulla perspiciatis.</p>
+            </div>
+        </div>
+    </div>
+    <div class="feed">
+        <h2>Write a review</h2>
+        <div class="feed_form">
+            <form name="submit-googlesheet" method="post">
+                <input type="text" name="Name" placeholder="Name"><br>
+                <input type="email" name="Email" placeholder="Email Id"><br>
+                <input type="number" name="Number" placeholder="Contact NUmber"><br>
+                <textarea  rows="5" cols="7 " name="Review" placeholder="Write your review"></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+
+        </div>
+
+    </div>
+    <footer class="footer">
+        <div class="footer_logo">
+            <a href="#"><img src="images/logo.png" width="150" alt=""></a>
+        </div>
+        <div class="pages">
+            <h3>Pages</h3>
+            <a href="about.html">About Us</a>|
+            <a href="service.html">Services</a>|
+            <a href="blogs.html">Blogs</a>|
+            <a href="contact.html">Contact</a>|
+            <a href="#">Sign up</a>|
+
+        </div>
+        <div class="doc">
+            <h3>Document</h3>
+            <a href="">Privacy Policy</a>|
+            <a href="">Terms of use</a>|
+            <a href="">Refund Policy</a>|
+
+        </div>
+        <div class="social">
+            <h3>Follow Us</h3>
+            <a href="https://www.facebook.com/groups/universityofpune/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://in.linkedin.com/school/university-of-pune/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/sppu_engineering_updates/?hl=en"target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/search?q=%23unipune&lang=en" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+
+        </div>
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+            <a href="mailto:sofiyan232002@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+            
+
+        </div>
+        <hr>
+        <p>Copyright &copy; 2021 Eduford. All right reserved</p>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<script >
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbycVDF8ghfVEqLkYHiyquQL7WzRVVZ4dK271bPLQTpM2WoBM2nCCsMf7x5f5Va8rWwd0Q/exec'
+            const form = document.forms['submit-googlesheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+
+</script>
+</body>
+</html>
